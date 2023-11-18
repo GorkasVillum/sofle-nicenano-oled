@@ -60,7 +60,7 @@
 
         caps {
             bindings = <&kp CAPSLOCK>;
-            key-positions = <36 37>;
+            key-positions = <24 25>;
             layers = <0>;
         };
 
@@ -126,6 +126,11 @@
             bindings = <&kp LA(X)>;
             key-positions = <12 13>;
             layers = <0>;
+        };
+
+        undo {
+            bindings = <&kp LC(Z)>;
+            key-positions = <36 37>;
         };
     };
 
