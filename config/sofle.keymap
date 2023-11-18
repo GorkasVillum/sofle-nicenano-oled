@@ -60,7 +60,7 @@
 
         caps {
             bindings = <&kp CAPSLOCK>;
-            key-positions = <24 36>;
+            key-positions = <36 37>;
             layers = <0>;
         };
 
@@ -73,6 +73,58 @@
         pagedn {
             bindings = <&kp PAGE_DOWN>;
             key-positions = <59 58>;
+            layers = <0>;
+        };
+
+        up {
+            bindings = <&kp UP_ARROW>;
+            key-positions = <20 32>;
+        };
+
+        downarrow {
+            bindings = <&kp DOWN>;
+            key-positions = <32 46>;
+            layers = <0>;
+        };
+
+        leftarrow {
+            bindings = <&kp LEFT>;
+            key-positions = <32 31>;
+            layers = <0>;
+        };
+
+        rightarrow {
+            bindings = <&kp RIGHT_ARROW>;
+            key-positions = <32 33>;
+            layers = <0>;
+        };
+
+        cut {
+            bindings = <&kp K_CUT>;
+            key-positions = <0 12>;
+            layers = <0>;
+        };
+
+        copy {
+            bindings = <&kp K_COPY>;
+            key-positions = <12 24>;
+        };
+
+        paste {
+            bindings = <&kp K_PASTE>;
+            key-positions = <36 24>;
+            layers = <0>;
+        };
+
+        quicktextcopath {
+            bindings = <&kp LA(Q)>;
+            key-positions = <0 1>;
+            layers = <0>;
+        };
+
+        nexthashcopath {
+            bindings = <&kp LA(X)>;
+            key-positions = <12 13>;
             layers = <0>;
         };
     };
