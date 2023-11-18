@@ -41,6 +41,22 @@
             bindings = <&none>;
             label = "ZOOMIN";
         };
+
+        alt_tab: alt_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&alt_tab>, <&macro_press>;
+
+            label = "ALT_TAB";
+        };
+
+        alt_shift_tab: alt_shift_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&alt_shift_tab>, <&macro_press>;
+
+            label = "ALT_SHIFT_TAB";
+        };
     };
 
     keymap {
@@ -66,7 +82,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+                <&inc_dec_kp LA(TAB) LA(LS(TAB))>;
         };
 
         lower_layer {
