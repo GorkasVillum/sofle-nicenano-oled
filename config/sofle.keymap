@@ -144,6 +144,18 @@
             key-positions = <23 22>;
             layers = <0>;
         };
+
+        volumeup {
+            bindings = <&kp C_VOLUME_UP>;
+            key-positions = <6 7>;
+            layers = <0>;
+        };
+
+        voldown {
+            bindings = <&kp C_VOL_DN>;
+            key-positions = <18 19>;
+            layers = <0>;
+        };
     };
 
     keymap {
