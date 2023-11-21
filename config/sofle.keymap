@@ -179,7 +179,9 @@
                    &kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &mo LOWER  &kp RET       &kp SPACE        &mo RAISE  &kp HOME  &kp END    &kp PAGE_UP
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(EQUAL) LC(MINUS) &inc_dec_kp LA(TAB) LA(LS(TAB))>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOLUME_UP C_VOL_DN>,
+                <&inc_dec_kp LA(TAB) LA(LS(TAB))>;
         };
 
         lower_layer {
