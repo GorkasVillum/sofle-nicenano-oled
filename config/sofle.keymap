@@ -147,13 +147,13 @@
 
         volumeup {
             bindings = <&kp C_VOLUME_UP>;
-            key-positions = <6 7>;
+            key-positions = <34 35>;
             layers = <0>;
         };
 
         voldown {
             bindings = <&kp C_VOL_DN>;
-            key-positions = <18 19>;
+            key-positions = <48 49>;
             layers = <0>;
         };
     };
