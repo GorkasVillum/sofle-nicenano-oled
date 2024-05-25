@@ -173,6 +173,15 @@
         };
     };
 
+    behaviors {
+        Tap_enter: Tap_enter {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_ENTER";
+            #binding-cells = <0>;
+            bindings = <&kp SQT>, <&kp ENTER>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
