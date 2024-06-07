@@ -191,6 +191,14 @@
 
             tapping-term-ms = <300>;
         };
+
+        Tapalts: Tapalts {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPALTS";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&kp TILDE>, <&kp LA(S)>;
+        };
     };
 
     keymap {
