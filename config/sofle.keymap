@@ -83,29 +83,6 @@
             layers = <0>;
         };
 
-        up {
-            bindings = <&kp UP_ARROW>;
-            key-positions = <20 32>;
-        };
-
-        downarrow {
-            bindings = <&kp DOWN>;
-            key-positions = <32 46>;
-            layers = <0>;
-        };
-
-        leftarrow {
-            bindings = <&kp LEFT>;
-            key-positions = <32 31>;
-            layers = <0>;
-        };
-
-        rightarrow {
-            bindings = <&kp RIGHT_ARROW>;
-            key-positions = <32 33>;
-            layers = <0>;
-        };
-
         cut {
             bindings = <&kp LC(X)>;
             key-positions = <0 12>;
@@ -152,18 +129,6 @@
             layers = <0>;
         };
 
-        volumeup {
-            bindings = <&kp C_VOLUME_UP>;
-            key-positions = <48 49 47>;
-            layers = <0>;
-        };
-
-        voldown {
-            bindings = <&kp C_VOL_DN>;
-            key-positions = <48 49 59>;
-            layers = <0>;
-        };
-
         calculator {
             bindings = <&kp C_AL_CALC>;
             key-positions = <36 49>;
@@ -196,15 +161,6 @@
             label = "TAP_ENTER";
             #binding-cells = <0>;
             bindings = <&kp SQT>, <&kp ENTER>;
-
-            tapping-term-ms = <300>;
-        };
-
-        tap_caps: tap_caps {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_CAPS";
-            #binding-cells = <0>;
-            bindings = <&kp TAB>, <&kp CAPS>;
 
             tapping-term-ms = <300>;
         };
@@ -242,9 +198,9 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&Tapalts   &kp N1  &kp N2            &kp N3        &kp N4        &kp N5                                    &kp N6     &kp N7    &kp N8     &kp N9       &kp N0    &kp BACKSPACE
-&kp TAB    &kp Q   &kp W             &kp E         &kp R         &kp T                                     &kp Y      &kp U     &kp I      &kp O        &kp P     &kp PIPE
-&kp CAPS   &kp A   &kp S             &kp D         &kp F         &kp G                                     &kp H      &kp J     &kp K      &kp L        &kp SEMI  &kp ENTER
+&tildesc   &kp N1  &kp N2            &kp N3        &kp N4        &kp N5                                    &kp N6     &kp N7    &kp N8     &kp N9       &kp N0    &kp BACKSPACE
+&kp TAB    &kp Q   &kp W             &kp E         &kp R         &kp T                                     &kp Y      &kp U     &kp I      &kp O        &kp P     &kp BACKSLASH
+&kp CAPS   &kp A   &kp S             &kp D         &kp F         &kp G                                     &kp H      &kp J     &kp K      &kp L        &kp SEMI  &kp APOSTROPHE
 &kp LSHFT  &kp Z   &kp X             &kp C         &kp V         &kp B      &kp PRINTSCREEN    &kp C_MUTE  &kp N      &kp M     &kp COMMA  &kp DOT      &kp FSLH  &kp RSHFT
                    &kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &kp SPACE  &mo 1              &mo 2       &kp SPACE  &kp HOME  &kp END    &kp PAGE_UP
             >;
