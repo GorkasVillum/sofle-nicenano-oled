@@ -45,7 +45,7 @@
         insertheader: insertheader {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(I)>;
+            bindings = <&kp LA(I)>;
             label = "INSERTHEADER";
         };
     };
