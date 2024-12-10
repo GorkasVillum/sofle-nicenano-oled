@@ -182,13 +182,6 @@
             mods = <(MOD_RSFT)>;
             keep-mods = <(MOD_RSFT)>;
         };
-
-        tapdel: tapdel {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDEL";
-            #binding-cells = <0>;
-            bindings = <&kp BACKSPACE>, <&kp DELETE>;
-        };
     };
 
     keymap {
@@ -205,7 +198,7 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&tildesc   &kp N1  &kp N2            &kp N3        &kp N4        &kp N5                                    &kp N6     &kp N7    &kp N8     &kp N9       &kp N0    &tapdel
+&tildesc   &kp N1  &kp N2            &kp N3        &kp N4        &kp N5                                    &kp N6     &kp N7    &kp N8     &kp N9       &kp N0    &kp BACKSPACE
 &kp TAB    &kp Q   &kp W             &kp E         &kp R         &kp T                                     &kp Y      &kp U     &kp I      &kp O        &kp P     &kp DEL
 &kp CAPS   &kp A   &kp S             &kp D         &kp F         &kp G                                     &kp H      &kp J     &kp K      &kp L        &kp SEMI  &Tap_enter
 &kp LSHFT  &kp Z   &kp X             &kp C         &kp V         &kp B      &kp PRINTSCREEN    &kp C_MUTE  &kp N      &kp M     &kp COMMA  &kp DOT      &kp FSLH  &kp RSHFT
