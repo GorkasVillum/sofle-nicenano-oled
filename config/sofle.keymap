@@ -245,11 +245,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans    &trans          &trans           &trans    &trans        &trans
-&bt BT_PRV  &bt BT_NXT    &trans        &trans        &trans        &trans                          &trans    &kp UP_ARROW    &trans           &trans    &trans        &trans
-&trans      &trans        &trans        &trans        &trans        &trans                          &kp LEFT  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans    &kp UP_ARROW  &trans
-&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans    &trans          &trans           &trans    &kp DOWN      &kp RIGHT
-                          &trans        &trans        &trans        &trans        &trans    &trans  &trans    &trans          &trans           &kp LEFT
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans    &trans    &trans     &trans    &trans        &trans
+&bt BT_PRV  &bt BT_NXT    &trans        &trans        &trans        &trans                          &trans    &kp UP    &trans     &trans    &trans        &trans
+&trans      &trans        &trans        &trans        &trans        &trans                          &kp LEFT  &kp DOWN  &kp RIGHT  &trans    &kp UP_ARROW  &trans
+&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans    &trans    &trans     &trans    &kp DOWN      &kp RIGHT
+                          &trans        &trans        &trans        &trans        &trans    &trans  &trans    &trans    &trans     &kp LEFT
             >;
 
             sensor-bindings =
