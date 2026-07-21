@@ -31,7 +31,7 @@
         newlinecopath: newlinecopath {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp MINUS &kp SPACE>;
+            bindings = <&kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp MINUS &kp SPACE>;
             label = "NEWLINECOPATH";
         };
 
@@ -47,6 +47,27 @@
             #binding-cells = <0>;
             bindings = <&kp LA(I)>;
             label = "INSERTHEADER";
+        };
+
+        HE: HE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(H) &kp AMPS &kp LS(E)>;
+            label = "HE";
+        };
+
+        closepicsplus: closepicsplus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(C)>;
+            label = "CLOSEPICSPLUS";
+        };
+
+        toso: toso {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F3 &kp ENTER &kp S &kp ENTER>;
+            label = "TOSO";
         };
     };
 
@@ -245,11 +266,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans    &trans    &trans     &trans    &trans        &kp A
-&bt BT_PRV  &bt BT_NXT    &trans        &trans        &trans        &trans                          &trans    &kp UP    &trans     &trans    &trans        &trans
-&trans      &trans        &trans        &trans        &trans        &trans                          &kp LEFT  &kp DOWN  &kp RIGHT  &trans    &kp UP_ARROW  &trans
-&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans    &trans    &trans     &trans    &kp DOWN      &kp RIGHT
-                          &trans        &trans        &trans        &trans        &trans    &trans  &trans    &trans    &trans     &kp LEFT
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans    &trans    &trans     &trans    &trans        &kp A
+&bt BT_PRV  &bt BT_NXT    &trans          &trans        &trans        &trans                          &trans    &kp UP    &trans     &trans    &trans        &trans
+&trans      &trans        &trans          &trans        &trans        &trans                          &kp LEFT  &kp DOWN  &kp RIGHT  &trans    &kp UP_ARROW  &trans
+&trans      &trans        &trans          &trans        &trans        &trans        &trans    &trans  &trans    &trans    &trans     &trans    &kp DOWN      &kp RIGHT
+                          &closepicsplus  &HE           &toso         &trans        &trans    &trans  &trans    &trans    &trans     &kp LEFT
             >;
 
             sensor-bindings =
