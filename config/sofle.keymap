@@ -270,7 +270,7 @@
 &bt BT_PRV  &bt BT_NXT    &trans          &trans        &trans        &trans                          &trans    &kp UP    &trans     &trans    &trans        &trans
 &trans      &trans        &trans          &trans        &trans        &trans                          &kp LEFT  &kp DOWN  &kp RIGHT  &trans    &kp UP_ARROW  &trans
 &trans      &trans        &trans          &trans        &trans        &trans        &trans    &trans  &trans    &trans    &trans     &trans    &kp DOWN      &kp RIGHT
-                          &closepicsplus  &HE           &toso         &trans        &trans    &trans  &trans    &trans    &trans     &kp LEFT
+                          &closepicsplus  &HE           &toso         &trans        &studio_unlock    &trans  &trans    &trans    &trans     &kp LEFT
             >;
 
             sensor-bindings =
