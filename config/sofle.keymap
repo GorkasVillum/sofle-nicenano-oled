@@ -200,7 +200,7 @@
             #binding-cells = <0>;
             bindings = <&kp ESCAPE>, <&alt_s_macro>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <200>;
         };
     };
 
