@@ -187,11 +187,20 @@
         g_esc_JBL: g_esc_JBL {
             compatible = "zmk,behavior-mod-morph";
             label = "G_ESC_JBL";
-            bindings = <&kp ESCAPE>, <&kp TILDE>;
+            bindings = <&alts_esc>, <&kp TILDE>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
             keep-mods = <(MOD_RSFT)>;
+        };
+
+        alts_esc: alts_esc {
+            compatible = "zmk,behavior-tap-dance";
+            label = "ALTS_ESC";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE>, <&alt_s_macro>;
+
+            tapping-term-ms = <300>;
         };
     };
 
